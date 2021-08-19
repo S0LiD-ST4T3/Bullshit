@@ -1,0 +1,21 @@
+[06:59:45.821] [Error] Exception while invoking lua message handler for message 'stardustlib:damagedEntity'. (LuaException) Error code 2, [string "/sys/stardust/statusext.lua"]:50: attempt to perform arithmetic on a nil value (local 'effDmg')
+stack traceback:
+	[C]: in metamethod '__mul'
+	[string "/sys/stardust/statusext.lua"]:50: in function <[string "/sys/stardust/statusext.lua"]:48>
+./starbound(_ZN4Star13StarExceptionC2EPKcNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x66) [0xa91c36]
+./starbound(_ZN4Star12LuaExceptionC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x52) [0xa4b3b2]
+./starbound(_ZN4Star9LuaEngine11handleErrorEP9lua_Statei+0x392) [0xa41f42]
+./starbound(_ZN4Star9LuaEngine12callFunctionIJNS_6StringEbNS_11LuaVariadicINS_4JsonEEEEEENS_7VariantINS6_INS_5EmptyEJbxdNS_9LuaStringENS_8LuaTableENS_11LuaFunctionENS_9LuaThreadENS_11LuaUserDataEEEEJNS3_ISD_EEEEEiDpRKT_+0xaa) [0xd1050a]
+./starbound(_ZN4Star27LuaMessageHandlingComponentINS_25LuaActorMovementComponentINS_21LuaUpdatableComponentINS_17LuaWorldComponentINS_16LuaBaseComponentEEEEEEEE13handleMessageERKNS_6StringEbRKNS_4ListINS_4JsonESaISD_EEE+0x164) [0xfe5ca4]
+./starbound(_ZN4Star16StatusController14receiveMessageERKNS_6StringEbRKNS_4ListINS_4JsonESaIS5_EEE+0x2d) [0xfcffbd]
+./starbound(_ZN4Star6Player14receiveMessageEtRKNS_6StringERKNS_4ListINS_4JsonESaIS5_EEE+0xe3f) [0xe642ef]
+./starbound(_ZN4Star11WorldClient21handleIncomingPacketsERKNS_4ListISt10shared_ptrINS_6PacketEESaIS4_EEE+0x1cd8) [0x112ac78]
+./starbound(_ZN4Star14UniverseClient13handlePacketsERKNS_4ListISt10shared_ptrINS_6PacketEESaIS4_EEE+0x77e) [0x1086fce]
+./starbound(_ZN4Star14UniverseClient6updateEv+0x1e5) [0x1087f85]
+./starbound(_ZN4Star17ClientApplication13updateRunningEv+0x2bc) [0x97b5ec]
+./starbound(_ZN4Star17ClientApplication6updateEv+0x70) [0x97c820]
+./starbound(_ZN4Star11SdlPlatform3runEv+0x8bd) [0x1384b8d]
+./starbound(_ZN4Star18runMainApplicationESt10unique_ptrINS_11ApplicationESt14default_deleteIS1_EENS_10StringListE+0xf6) [0x13807d6]
+./starbound(main+0x453) [0x965af3]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f41e24de0b3]
+./starbound(_start+0x2a) [0x9739ea]
